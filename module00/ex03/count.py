@@ -8,6 +8,10 @@ def text_analyzer(text=None):
     if text is None:
         text = input("Please provide a string to analyze.\n")
 
+    if not isinstance(text, str):
+        print("AssertionError: argument is not a string")
+        return
+
     printcount = 0
     uppercount = 0
     lowercount = 0
