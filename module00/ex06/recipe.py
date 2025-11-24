@@ -40,7 +40,7 @@ def add_recipe():
     cookbook[name] = {
         'ingredients': ingredients,
         'meal': meal,
-        'prep_time': ptimeAjoute continue dans le except ValueError de la boucle principale.
+        'prep_time': ptime
     }
 
 if __name__ == "__main__":
