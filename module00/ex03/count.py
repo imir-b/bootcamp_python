@@ -6,8 +6,7 @@ def text_analyzer(text=None):
     punctuation and spaces in a given text."""
     
     if text is None:
-        print("Nothing turned in. Please provide a string.")
-        text = 
+        text = input("Please provide a string to analyze.\n")
 
     printcount = 0
     uppercount = 0
@@ -39,9 +38,5 @@ if __name__ == "__main__":
         sys.exit(1)
     if len(sys.argv) < 2 :
         text_analyzer()
-    try:
-        text = str(sys.argv[1])
-    except ValueError:
-        print("AssertionError: argument is not a string")
-        sys.exit(1)
-    text_analyzer(text)
+    else :
+        text_analyzer(sys.argv[1])
